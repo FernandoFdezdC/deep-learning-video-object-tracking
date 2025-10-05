@@ -11,8 +11,6 @@ Output results can be seen on the following link: https://drive.google.com/drive
 
 This project focuses on studying and improving a deep learning model for multi-object tracking. The starting point is a base model composed of a **Fast-RCNN object detector** trained on the **MOT16** dataset, and a tracker that assigns current detections to previous ones using greedy Intersection over Union (IoU). The goal is to improve the **MOTA** score by optimizing aspects of the base model.
 
-Mandatory tasks included understanding the provided tutorial, analyzing the scripts `tracker.py` and `object_detector.py`, and designing, implementing, and evaluating improvements.
-
 The proposed improvements involve using only high-confidence detections from the detector (tuning the optimal threshold to maximize the F1-score) and applying the **Hungarian algorithm** for data association, which significantly improves the evaluation metrics.
 
 ---
